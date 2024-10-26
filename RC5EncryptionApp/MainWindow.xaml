@@ -1,0 +1,21 @@
+﻿<Window x:Class="RC5EncryptionApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RC5 File Encryption" Height="300" Width="400">
+    <Grid>
+        <!-- Label for Passphrase -->
+        <Label Content="Passphrase:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,40,0,0"/>
+
+        <!-- TextBox for entering Passphrase -->
+        <TextBox x:Name="PassphraseTextBox" HorizontalAlignment="Left" Height="23" Margin="130,40,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Button to Encrypt File -->
+        <Button x:Name="EncryptButton" Content="Encrypt File" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,100,0,0" Width="120" Height="40" Click="EncryptButton_Click"/>
+
+        <!-- Button to Decrypt File -->
+        <Button x:Name="DecryptButton" Content="Decrypt File" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,100,0,0" Width="120" Height="40" Click="DecryptButton_Click"/>
+
+        <!-- Label for Success/Error Messages -->
+        <Label x:Name="MessageLabel" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30" Content="" FontSize="14" Foreground="Green"/>
+    </Grid>
+</Window>
